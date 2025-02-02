@@ -1,156 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>.+* Meu servidor *+.</title>
-  <link rel="stylesheet" href="assets/css/bulma.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loja de Contas Minecraft Java</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-<header class="section">
-  <div class="logo container">
-    <a href="index.html">
-      <img src="assets/img/logo.png">
-    </a>
-  </div>
-
-  <div class="container">
-    <nav class="navbar">
-      <div class="navbar-brand">
-        <a class="navbar-burger burger">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a href="index.html" class="navbar-item"><i class="fas fa-home"></i> Início</a>
-          <a href="regras.html" class="navbar-item"><i class="fas fa-book"></i> Regras</a>
-          <a href="votar.html" class="navbar-item"><i class="fas fa-vote-yea"></i> Votar</a>
-          <a href="#" target="_blank" class="navbar-item"><i class="fas fa-comments"></i> Fórum</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="loja.html" class="navbar-link"><i class="fas fa-shopping-cart"></i> Loja</a>
-            <div class="navbar-dropdown">
-              <a href="loja.html#vip" class="navbar-item"><i class="fas fa-gem"></i> VIPs</a>
-              <a href="loja.html#chave" class="navbar-item"><i class="fas fa-key"></i> Chaves</a>
-              <a href="loja.html#moedas" class="navbar-item"><i class="fas fa-coins"></i> Moedas</a>
-              <a href="loja.html#unban" class="navbar-item"><i class="fas fa-ban"></i> Unban</a>
-              <hr class="navbar-divider">
-              <a href="termos.html" class="navbar-item">Informações importantes</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">REX STORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#contas">Comprar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
             </div>
-          </div>
-          <a href="#" target="_blank" class="navbar-item"><i class="fab fa-discord"></i> Discord</a>
         </div>
-    
-        <div class="navbar-end">
-          <a id="ip" class="navbar-item">
-            <i class="fas fa-copy"></i> <span>jogar.imlucas.com.br</span>
-            <textarea></textarea>
-          </a>
-        </div>
-      </div>
     </nav>
-  </div>
-</header>
 
-<main class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <article class="article">
-          <h1 class="article-title"><i class="fas fa-gamepad"></i> Sobre o servidor</h1>
-          <div class="article-thumbnail" style="background-image:url(assets/img/miniatura.png)"></div>
-          <div class="article-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="list">
-              <li><i class="fas fa-check"></i> Sistema de skills McMMO</li>
-              <li><i class="fas fa-check"></i> Sistema de facções</li>
-              <li><i class="fas fa-check"></i> Economia balanceada</li>
-              <li><i class="fas fa-check"></i> VIPs possuem vantagens exclusivas</li>
-              <li><i class="fas fa-check"></i> Os mobs nascem apenas a noite</li>
-              <li><i class="fas fa-check"></i> PvP apenas a noite (e 24h nas arenas)</li>
-              <li><i class="fas fa-check"></i> Eventos diários com premiações diversas</li>
-              <li><i class="fas fa-check"></i> Sistema de mudar skin, mesmo sem Minecraft original</li>
-            </ul>
-          </div>
-        </article>
+    <!-- Seção Principal -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Compre sua conta Minecraft Java</h1>
+            <p class="lead">Contas 100% seguras por apenas R$15!</p>
+        </div>
+    </header>
 
-        <article class="article">
-          <h1 class="article-title"><i class="fas fa-users"></i> Conheça nossa equipe</h1>
-          <div class="article-content">
-            <ul class="equipe">
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-4">Dono</h2>
-              </li>
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-6">Administrador</h2>
-              </li>
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-5">Moderador</h2>
-              </li>
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-5">Moderador</h2>
-              </li>
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-2">Ajudante</h2>
-              </li>
-              <li>
-                <img src="http://cravatar.eu/head/Shafter_/128.png">
-                <h1>Shafter_</h1>
-                <h2 class="cor-2">Ajudante</h2>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div class="column is-4">
-        <article class="article">
-          <h1 id="status" class="article-title"><i class="fas fa-sync is-spinning"></i> Atualizando...</h1>
-          <div class="article-content">
-            <b>Jogadores online:</b> <span id="online">[...]</span><br>
-            <b>MOTD:</b> <span id="motd">[...]</span>
-          </div>
-        </article>
-        <article class="article">
-          <h1 class="article-title"><i class="fab fa-twitter"></i> Siga-nos no Twitter</h1>
-          <div class="article-content">
-            <a class="twitter-timeline" data-lang="pt" data-height="500" data-theme="light" href="https://twitter.com/Minecraft?ref_src=twsrc%5Etfw">Tweets by Minecraft</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</main>
+    <!-- Seção de Contas à Venda -->
+    <section id="contas" class="container my-5">
+        <h2 class="text-center mb-4"> </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src=https://cdn.discordapp.com/attachments/1295967161352720486/1335452837898878996/images.jpg?ex=67a038e0&is=679ee760&hm=04211d1d14715561765148b18b45e3cc93deb91c2138049598ccf0153590cc18& class="card-img-top" alt="Minecraft">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Minecraft Java Edition</h5>
+                        <p class="card-text">Super Promoção  R$15.</p>
+                        <a href="https://wa.me/5571992938650?text=Olá%2C%20vi%20o%20anúncio%20e%20estou%20interessado%20em%20adquirir%20a%20minha%20conta%20Minecraft%20Java%20Edition." class="btn btn-success">Comprar via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="section">
-  <div class="container">
-    <article class="footer">
-      <span>Meu servidor <script>document.write(new Date().getFullYear())</script> &copy; Todos os direitos reservados.</span>
-      <a href="https://imlucas.com.br" target="_blank" class="is-muted"><i class="fas fa-tools"></i> Desenvolvido por Shafter_</a>
-    </article>
-  </div>
-</footer>
+    <!-- Seção de Contato -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contato</h2>
+            <p class="text-center">Dúvidas? Fale conosco pelo WhatsApp!</p>
+            <div class="text-center">
+                <a href="https://wa.me/5571992938650" class="btn btn-primary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="assets/js/scripts.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Loja REX STORE - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
